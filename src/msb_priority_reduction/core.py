@@ -7,19 +7,20 @@ def msb_priority_reduction(vector: List[int]) -> List[Tuple[int, ...]]:
         raise ValueError("Input vector must contain non-negative integers only.")
     
     vec = list(vector)
-    n = len(vec)
     states = [tuple(vec)]
     
+    n = len(vec)
     if n == 0:
         return states
     
-    i = 0
+    # الگوریتم ساده: کاهش از چپ به راست به صورت چرخه‌ای
+    index = 0
     while any(x > 0 for x in vec):
-        if vec[i] > 0:
-            vec[i] -= 1
+        if vec[index] > 0:
+            vec[index] -= 1
             states.append(tuple(vec))
-        i = (i + 1) % n
-        
+        index = (index + 1) % n
+            
     return states
 
 def cli_format(vector):
