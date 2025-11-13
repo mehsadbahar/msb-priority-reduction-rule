@@ -63,7 +63,38 @@ GitHub: [@mehsadbahar](https://github.com/mehsadbahar)
 ---
 
 ## 📜 License
+cd /workspaces/msb-priority-reduction-rule
+cat > README.md << 'EOF'
+# 🎯 MSB Priority Reduction Rule
 
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![Tests](https://img.shields.io/badge/tests-9%20passed-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+**Professional implementation of Round-Robin Priority Reduction Algorithm** - A mathematical framework for state vector reduction
+
+## ✨ Key Features
+
+- 🎯 **Round-Robin Priority Reduction Algorithm**
+- 🧪 **Comprehensive Automated Tests** (9 complete tests)
+- 📊 **Simulation & Analysis Notebook**
+- 🐍 **Professional Python Package** with standard structure
+- 📈 **Advanced Visualization** with matplotlib
+- 🔄 **Automated CI/CD** with GitHub Actions
+
+## 🚀 Quick Start
+
+### Installation & Execution:
+```bash
+# Clone project
+git clone https://github.com/mehsadbahar/msb-priority-reduction-rule.git
+cd msb-priority-reduction-rule
+
+# Install package
+pip install -e .
+
+# Run algorithm
+python -m msb_priority_reduction "[3,2,1,1]"
 This work is licensed under Creative Commons BY-NC-SA 4.0  
 Attribution required for all derivatives.
 
